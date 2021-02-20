@@ -1,0 +1,81 @@
+.user-card-profile {
+  .about-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    padding: 20px 0;
+
+    .user-image {
+      flex: 1;
+      text-align: center;
+
+      .image {
+        border-radius: 50%;
+        width: 70px;
+      }
+    }
+
+    .user-name {
+      flex: 1;
+    }
+  }
+
+  .about-profile {
+    text-align: center;
+    margin: 20px 0;
+
+    .follow {
+      display: flex;
+      justify-content: center;
+
+      .followers {
+        border-right: 1px solid gray;
+        flex: 1;
+
+        .field-name {
+          padding: 8px 0;
+        }
+
+        .field-value {
+          padding-bottom: 8px;
+        }
+      }
+
+      .following {
+        flex: 1;
+
+        .field-name {
+          padding: 8px 0;
+        }
+
+        .field-value {
+          padding-bottom: 8px;
+        }
+      }
+    }
+
+    .repos-number {
+      .field-name {
+        padding: 16px 0 8px;
+      }
+    }
+  }
+
+  .user-repositories {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .show-more-btn {
+    text-align: center;
+
+    .more-repo {
+      border-radius: 30px;
+      border: none;
+      padding: 14px;
+      background: #55a1ff;
+      color: white;
+    }
+  }
+}

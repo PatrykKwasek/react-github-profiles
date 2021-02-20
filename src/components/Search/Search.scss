@@ -1,0 +1,15 @@
+.search {
+  text-align: center;
+  display: flex;
+  // width: 95%;
+  // margin: 0 auto;
+
+  .input {
+    padding: 8px 6px;
+    flex: 2;
+  }
+
+  .btn-search {
+    padding: 8px;
+  }
+}
