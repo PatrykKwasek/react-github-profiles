@@ -7,9 +7,13 @@
   .input {
     padding: 8px 6px;
     flex: 2;
+    width: 100%;
   }
 
   .btn-search {
     padding: 8px;
+    background: #55a1ff;
+    color: #ffffff;
+    border: 1px solid #55a1ff;
   }
 }

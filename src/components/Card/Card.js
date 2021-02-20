@@ -9,19 +9,19 @@ export const Card = () => {
   return (
     <div className='user-card-profile'>
       <Header />
-      {/* <Search /> */}
+      <Search />
 
       <div className='about-user'>
         <div className='user-image'>
-          <Image src='https://avatars.githubusercontent.com/u/6692364?v=4' className='image' />
+          <Image src='https://avatars.githubusercontent.com/u/52383014?v=4' className='image' />
         </div>
 
         <div className='user-name'>
-          <p>
+          <p className='fullname'>
             <span>Cecilia Patton</span>
           </p>
 
-          <p>
+          <p className='username'>
             <span>@cecilia_patton</span>
           </p>
         </div>

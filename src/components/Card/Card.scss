@@ -1,10 +1,15 @@
 .user-card-profile {
+  width: 90%;
+  margin: 0 auto;
+
   .about-user {
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     border-bottom: 1px solid gray;
     padding: 20px 0;
+    flex-direction: column;
+    text-align: center;
 
     .user-image {
       flex: 1;
@@ -18,19 +23,29 @@
 
     .user-name {
       flex: 1;
+
+      .fullname {
+        padding: 6px 0;
+      }
+
+      .username {
+        color: #858688;
+      }
     }
   }
 
   .about-profile {
     text-align: center;
-    margin: 20px 0;
+    // margin: 20px 0;
+    margin: 12px 0;
 
     .follow {
       display: flex;
+      flex-direction: column;
       justify-content: center;
 
       .followers {
-        border-right: 1px solid gray;
+        // border-right: 1px solid gray;
         flex: 1;
 
         .field-name {
@@ -57,7 +72,8 @@
 
     .repos-number {
       .field-name {
-        padding: 16px 0 8px;
+        // padding: 16px 0 8px;
+        padding: 8px 0;
       }
     }
   }
@@ -76,6 +92,8 @@
       padding: 14px;
       background: #55a1ff;
       color: white;
+      // width: 200px;
+      width: 100%;
     }
   }
 }
