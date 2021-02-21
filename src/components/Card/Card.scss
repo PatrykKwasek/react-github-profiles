@@ -94,6 +94,35 @@
       color: white;
       // width: 200px;
       width: 100%;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .user-card-profile {
+    max-width: 425px;
+
+    .header {
+      flex-direction: row;
+    }
+
+    .about-user {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .about-profile {
+      margin: 20px 0;
+
+      .follow {
+        flex-direction: row;
+
+        .followers {
+          border-right: 1px solid gray;
+        }
+      }
     }
   }
 }
