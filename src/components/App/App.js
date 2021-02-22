@@ -4,14 +4,14 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { Card } from '../Card/Card';
+import { Home } from '../../pages/Home/Home';
 
 
 export const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path='/' component={Card} />
+        <Route path='/' component={Home} />
       </Switch>
     </Router>
   )

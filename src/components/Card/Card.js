@@ -1,16 +1,11 @@
 import React from 'react';
 import { Image } from '../Image/Image';
 import { Button } from '../Button/Button';
-import { Search } from '../Search/Search';
-import { Header } from '../Header/Header';
 import './Card.scss';
 
 export const Card = () => {
   return (
     <div className='user-card-profile'>
-      <Header />
-      <Search />
-
       <div className='about-user'>
         <div className='user-image'>
           <Image src='https://avatars.githubusercontent.com/u/52383014?v=4' className='image' />
@@ -33,6 +28,7 @@ export const Card = () => {
             <p className='field-name'>
               <span>Followers</span>
             </p>
+
             <p className='field-value'>
               <strong>5922</strong>
             </p>
@@ -42,6 +38,7 @@ export const Card = () => {
             <p className='field-name'>
               <span>Following</span>
             </p>
+
             <p className='field-value'>
               <strong>34</strong>
             </p>
@@ -52,6 +49,7 @@ export const Card = () => {
           <p className='field-name'>
             <span>Public repositories</span>
           </p>
+
           <p className='field-value'>
             <strong>75</strong>
           </p>

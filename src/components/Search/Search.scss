@@ -1,8 +1,8 @@
 .search {
   text-align: center;
   display: flex;
-  // width: 95%;
-  // margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 
   .input {
     padding: 8px 6px;
@@ -19,5 +19,11 @@
     flex: 1;
     outline: none;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 425px) {
+  .search {
+    max-width: 425px;
   }
 }
