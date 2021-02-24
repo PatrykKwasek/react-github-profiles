@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Sun, Moon } from 'react-feather';
 import './Header.scss';
 

@@ -3,7 +3,9 @@ import { Card } from '../../components/Card/Card';
 import { Footer } from '../../components/Footer/Footer';
 import { Header } from '../../components/Header/Header';
 import { Search } from '../../components/Search/Search';
+import img from '../../assets/images/search.svg'
 import './Home.scss';
+import { Image } from '../../components/Image/Image';
 
 export const Home = () => {
   const [mode, setMode] = useState(localStorage.getItem('mode'));
@@ -19,7 +21,10 @@ export const Home = () => {
       <Header mode={mode} onClick={toggleMode} />
       <div className='content'>
         <Search />
-        <Card />
+        {/* <Card /> */}
+        <div className='awaiting-search-image'>
+          <Image src={img} className='search-image' />
+        </div>
       </div>
       <Footer />
     </div>

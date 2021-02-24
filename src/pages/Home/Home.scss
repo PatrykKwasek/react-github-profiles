@@ -33,8 +33,27 @@
     }
   }
 
+  //Temporarily styles!
+  .awaiting-search-image {
+    width: 90%;
+    margin: 20px auto;
+
+    .search-image {
+      width: 100%;
+    }
+  }
+
   .content {
     flex: 1;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 425px) {
+  .home-section {
+    //Temporarily styles!
+    .awaiting-search-image {
+      max-width: 475px;
+    }
   }
 }
