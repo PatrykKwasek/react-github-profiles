@@ -1,12 +1,14 @@
 import React from 'react';
-import { Button } from '../Button/Button';
+import { Sun, Moon } from 'react-feather';
 import './Header.scss';
 
 export const Header = () => {
   return (
     <div className='header'>
       <h2 className='app-name'>Github profiles</h2>
-      <Button txt='Switch mode' className='btn' />
+      <div className='mode'>
+        <Sun />
+      </div>
     </div>
   )
 }

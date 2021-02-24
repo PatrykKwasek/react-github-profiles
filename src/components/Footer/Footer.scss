@@ -7,14 +7,33 @@
   text-align: center;
   flex-direction: column;
 
-  p {
-    flex: 1;
+  .para {
+    // flex: 1;
     padding: 8px;
+  }
+
+  .footer-icons {
+    .icon {
+      padding: 8px;
+      a {
+        color: #fff;
+      }
+    }
   }
 }
 
 @media (min-width: 425px) {
   .footer {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-icons {
+      display: flex;
+
+      .icon {
+        padding: 0 6px;
+      }
+    }
   }
 }
