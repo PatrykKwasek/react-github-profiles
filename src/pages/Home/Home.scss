@@ -3,6 +3,36 @@
   min-height: 100vh;
   flex-direction: column;
 
+  &.dark {
+    background: #332f2f;
+    color: white;
+
+    .content {
+      background: #332f2f;
+    }
+
+    .search {
+      .btn-search {
+        background: #3769a7;
+        border: 1px solid #3769a7;
+      }
+    }
+
+    .user-card-profile {
+      .show-more-btn {
+        .more-repo {
+          background: #3769a7;
+          border: 1px solid #3769a7;
+        }
+      }
+    }
+
+    .footer {
+      background: black;
+      color: white;
+    }
+  }
+
   .content {
     flex: 1;
     margin-bottom: 20px;

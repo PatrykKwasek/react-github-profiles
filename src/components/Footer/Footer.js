@@ -5,7 +5,9 @@ import './Footer.scss';
 export const Footer = () => {
   return (
     <div className='footer'>
-      <p className='para'>Patryk Kwasek © 2021</p>
+      <p className='para'>
+        <span>Patryk Kwasek © 2021</span>
+      </p>
 
       <div className='footer-icons'>
         <p className='icon'>

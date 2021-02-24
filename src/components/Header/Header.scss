@@ -13,6 +13,7 @@
 
   .mode {
     margin-top: 8px;
+    cursor: pointer;
   }
 
   .btn {
@@ -30,9 +31,9 @@
   .header {
     max-width: 425px;
     flex-direction: row;
-  }
 
-  .mode {
-    margin-top: 0;
+    .mode {
+      margin-top: 0;
+    }
   }
 }
