@@ -33,19 +33,30 @@
     }
   }
 
-  //Temporarily styles!
-  .awaiting-search-image {
-    width: 90%;
-    margin: 20px auto;
-
-    .search-image {
-      width: 100%;
-    }
-  }
-
   .content {
     flex: 1;
     margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    .search {
+      .btn-search {
+        height: 45px;
+      }
+    }
+
+    //Temporarily styles!
+    .awaiting-search-image {
+      display: flex;
+      flex: 1;
+      width: 90%;
+      margin: 20px auto;
+
+      .search-image {
+        width: 100%;
+      }
+    }
   }
 }
 

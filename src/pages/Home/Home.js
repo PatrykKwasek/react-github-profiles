@@ -23,7 +23,7 @@ export const Home = () => {
         <Search />
         {/* <Card /> */}
         <div className='awaiting-search-image'>
-          <Image src={img} className='search-image' />
+          <Image src={img} alt='search-vector-image' className='search-image' />
         </div>
       </div>
       <Footer />

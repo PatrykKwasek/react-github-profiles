@@ -8,7 +8,7 @@ export const Card = () => {
     <div className='user-card-profile'>
       <div className='about-user'>
         <div className='user-image'>
-          <Image src='https://avatars.githubusercontent.com/u/52383014?v=4' className='image' />
+          <Image src='https://avatars.githubusercontent.com/u/52383014?v=4' alt='user-avatar' className='image' />
         </div>
 
         <div className='user-name'>
