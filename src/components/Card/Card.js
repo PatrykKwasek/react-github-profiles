@@ -9,18 +9,15 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
     <div className='user-card-profile'>
       <div className='about-user'>
         <div className='user-image'>
-          {/* <Image src='https://avatars.githubusercontent.com/u/52383014?v=4' alt='user-avatar' className='image' /> */}
           <Image src={userData.avatar_url} alt='user-avatar' className='image' />
         </div>
 
         <div className='user-name'>
           <p className='fullname'>
-            {/* <span>Cecilia Patton</span> */}
             <span>{userData.name || 'Not found'}</span>
           </p>
 
           <p className='username'>
-            {/* <span>@cecilia_patton</span> */}
             <span>{`@${userData.login}`}</span>
           </p>
         </div>
@@ -34,7 +31,6 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
             </p>
 
             <p className='field-value'>
-              {/* <strong>5922</strong> */}
               <strong>{userData.followers}</strong>
             </p>
           </div>
@@ -45,7 +41,6 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
             </p>
 
             <p className='field-value'>
-              {/* <strong>34</strong> */}
               <strong>{userData.following}</strong>
             </p>
           </div>
@@ -57,7 +52,6 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
           </p>
 
           <p className='field-value'>
-            {/* <strong>75</strong> */}
             <strong>{userData.public_repos}</strong>
           </p>
         </div>
@@ -66,11 +60,9 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
       <div className='user-repositories'>
         <span>List of user repositories:</span>
         <RepoList userRepos={userRepos} />
-        {/* Put user repositories list here */}
       </div>
 
       <div className='show-more-btn'>
-        {/* <Button txt='VIEW MORE' className='more-repo' /> */}
         <Button txt='VIEW MORE' className='more-repo' onClick={loadMoreRepos} />
       </div>
     </div>

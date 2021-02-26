@@ -1,0 +1,16 @@
+.user-repositories {
+  .repo-data-list {
+    .repo-item {
+      padding: 4px 0;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

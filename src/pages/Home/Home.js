@@ -30,25 +30,22 @@ export const Home = () => {
   };
 
   const getUserData = () => {
-    // axios.get('https://api.github.com/users/florinpop17').then(response => {
     axios.get(`https://api.github.com/users/${inputData.search_user}`).then(response => {
-      console.log(response.data);
       setUserData(response.data);
     })
   };
 
   const loadRepositories = () => {
-    // axios.get(`https://api.github.com/users/${inputData.search_user}/repos?page=${repoPage}&per_page=5`).then(response => {
     axios.get(`https://api.github.com/users/florinpop17/repos?page=${repoPage}&per_page=5`).then(response => {
       setUserRepos(userRepos.concat(response.data));
       setRepoPage(repoPage + 1);
-      console.log(response.data)
     })
   };
 
   const handleSubmit = () => {
     getUserData();
     loadRepositories();
+
     setInputData({ 'search_user': '' });
   }
 
@@ -58,8 +55,6 @@ export const Home = () => {
 
       <div className='content'>
         <Search onClick={handleSubmit} onChange={handleInput} />
-
-        {/* <Card userData={userData} userRepos={userRepos} loadMoreRepos={loadRepositories} /> */}
 
         {Object.keys(userData).length ?
           <Card userData={userData} userRepos={userRepos} loadMoreRepos={loadRepositories} /> :

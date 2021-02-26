@@ -1,4 +1,6 @@
 import React from 'react';
+import { RepoItem } from '../../Item/RepoItem/RepoItem';
+import './RepoList.scss';
 
 export const RepoList = ({ userRepos }) => {
   return (
@@ -6,9 +8,7 @@ export const RepoList = ({ userRepos }) => {
       {
         userRepos.map(item => {
           return (
-            <p key={item.id} className='repo-item'>
-              <a href={item.html_url}>{`${item.name}`}</a>
-            </p>
+            <RepoItem item={item} />
           )
         })
       }
