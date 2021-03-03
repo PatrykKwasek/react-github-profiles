@@ -11,13 +11,13 @@ export const Footer = () => {
 
       <div className='footer-icons'>
         <p className='icon'>
-          <a href='https://www.linkedin.com/in/patryk-kwasek-0b9a821b3/' target='_blank'>
+          <a href='https://www.linkedin.com/in/patryk-kwasek-0b9a821b3/' target='_blank' rel='noreferrer'>
             <Linkedin />
           </a>
         </p>
 
         <p className='icon'>
-          <a href='https://github.com/PatrykKwasek' target='_blank'>
+          <a href='https://github.com/PatrykKwasek' target='_blank' rel='noreferrer'>
             <GitHub />
           </a>
         </p>

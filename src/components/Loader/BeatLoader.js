@@ -1,6 +1,8 @@
 import React from 'react';
-import BeatLoader from "react-spinners/BeatLoader";
+
 import './Loader.scss';
+
+import BeatLoader from "react-spinners/BeatLoader";
 
 export const BeatLoader = () => {
   return (

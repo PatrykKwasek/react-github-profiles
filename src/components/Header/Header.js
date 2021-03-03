@@ -1,6 +1,8 @@
 import React from 'react';
-import { Sun, Moon } from 'react-feather';
+
 import './Header.scss';
+
+import { Sun, Moon } from 'react-feather';
 
 export const Header = ({ mode, onClick }) => {
   return (

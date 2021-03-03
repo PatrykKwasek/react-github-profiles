@@ -1,6 +1,8 @@
 import React from 'react';
-import PacmanLoader from "react-spinners/PacmanLoader";
+
 import './Loader.scss';
+
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 export const PacmanLoader = () => {
   return (

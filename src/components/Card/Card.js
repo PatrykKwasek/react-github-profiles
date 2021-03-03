@@ -1,8 +1,10 @@
 import React from 'react';
+
+import './Card.scss';
+
 import { Image } from '../Image/Image';
 import { Button } from '../Button/Button';
 import { RepoList } from '../List/RepoList/RepoList';
-import './Card.scss';
 
 export const Card = ({ userData, userRepos, loadMoreRepos }) => {
   return (
@@ -57,13 +59,15 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
         </div>
       </div>
 
-      <div className='user-repositories'>
-        <span>List of user repositories:</span>
-        <RepoList userRepos={userRepos} />
-      </div>
+      {userRepos.length > 0 &&
+        <div className='user-repositories'>
+          <span>User repositories:</span>
+          <RepoList userRepos={userRepos} />
+        </div>
+      }
 
       <div className='show-more-btn'>
-        <Button txt='VIEW MORE' className='more-repo' onClick={loadMoreRepos} />
+        <Button txt={`SHOW USER REPOSITORIES`} className='more-repo' onClick={loadMoreRepos} />
       </div>
     </div>
   )
