@@ -11,7 +11,11 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
     <div className='user-card-profile'>
       <div className='about-user'>
         <div className='user-image'>
-          <Image src={userData.avatar_url} alt='user-avatar' className='image' />
+          <Image
+            src={userData.avatar_url}
+            alt='user-avatar'
+            className='image'
+          />
         </div>
 
         <div className='user-name'>
@@ -67,7 +71,11 @@ export const Card = ({ userData, userRepos, loadMoreRepos }) => {
       }
 
       <div className='show-more-btn'>
-        <Button txt={`SHOW USER REPOSITORIES`} className='more-repo' onClick={loadMoreRepos} />
+        <Button
+          txt={`SHOW USER REPOSITORIES`}
+          className='more-repo'
+          onClick={loadMoreRepos}
+        />
       </div>
     </div>
   )
